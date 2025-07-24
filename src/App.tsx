@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import StudentListPage from './pages/StudentListPage';
 
 function App() {
-
-
   return (
     <>
-      
+      <StudentListPage />
     </>
   )
 }
