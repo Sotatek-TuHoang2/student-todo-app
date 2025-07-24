@@ -66,7 +66,7 @@ const StudentFormModal: React.FC<StudentFormModalProps> = ({
     >
       <Form form={form} layout="vertical" initialValues={{ remember: true }}>
         <Form.Item
-          name="fullname"
+          name="fullName"
           label="Họ và tên"
           rules={[{ required: true, message: "Vui lòng nhập họ tên" }]}
         >
@@ -77,7 +77,7 @@ const StudentFormModal: React.FC<StudentFormModalProps> = ({
           name="email"
           label="Email"
           rules={[
-            { required: true, message: "Vui lòng nhập họ tên" },
+            { required: true, message: "Vui lòng nhập Email" },
             { type: "email", message: "Email không hợp lệ" },
           ]}
         >

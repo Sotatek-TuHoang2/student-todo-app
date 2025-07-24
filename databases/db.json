@@ -1,0 +1,137 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "fullName": "Hoàng Anh Tú",
+      "email": "tu.hoang2@sotatek.com",
+      "dob": "2006-01-27",
+      "class": "CNTT1"
+    },
+    {
+      "id": "2",
+      "fullName": "Trần Thị B",
+      "email": "thib@example.com",
+      "dob": "2002-05-15",
+      "class": "CNTT2"
+    },
+    {
+      "id": "3",
+      "fullName": "Lê Văn C",
+      "email": "vanc@example.com",
+      "dob": "2001-11-20",
+      "class": "CNTT1"
+    },
+    {
+      "id": "4",
+      "fullName": "Nguyễn Thị D",
+      "email": "thid@example.com",
+      "dob": "2003-03-10",
+      "class": "CNTT2"
+    },
+    {
+      "id": "5",
+      "fullName": "Phạm Văn E",
+      "email": "vane@example.com",
+      "dob": "2000-12-01",
+      "class": "CNTT1"
+    },
+    {
+      "id": "6",
+      "fullName": "Đỗ Thị F",
+      "email": "thif@example.com",
+      "dob": "2004-07-22",
+      "class": "CNTT3"
+    },
+    {
+      "id": "7",
+      "fullName": "Lý Văn G",
+      "email": "vang@example.com",
+      "dob": "2002-09-13",
+      "class": "CNTT2"
+    },
+    {
+      "id": "8",
+      "fullName": "Bùi Thị H",
+      "email": "thih@example.com",
+      "dob": "2005-01-05",
+      "class": "CNTT1"
+    },
+    {
+      "id": "9",
+      "fullName": "Mai Văn I",
+      "email": "vani@example.com",
+      "dob": "2001-04-14",
+      "class": "CNTT3"
+    },
+    {
+      "id": "10",
+      "fullName": "Ngô Thị K",
+      "email": "thik@example.com",
+      "dob": "2003-11-30",
+      "class": "CNTT2"
+    },
+    {
+      "id": "11",
+      "fullName": "Hồ Văn L",
+      "email": "vanl@example.com",
+      "dob": "2002-08-08",
+      "class": "CNTT1"
+    },
+    {
+      "id": "12",
+      "fullName": "Vũ Thị M",
+      "email": "thim@example.com",
+      "dob": "2000-06-18",
+      "class": "CNTT3"
+    },
+    {
+      "id": "13",
+      "fullName": "Trịnh Văn N",
+      "email": "vann@example.com",
+      "dob": "2004-02-25",
+      "class": "CNTT2"
+    },
+    {
+      "id": "14",
+      "fullName": "Nguyễn Thị O",
+      "email": "thio@example.com",
+      "dob": "2001-10-19",
+      "class": "CNTT1"
+    },
+    {
+      "id": "15",
+      "fullName": "Phan Văn P",
+      "email": "vanp@example.com",
+      "dob": "2003-05-09",
+      "class": "CNTT3"
+    },
+    {
+      "id": "16",
+      "fullName": "Lê Thị Q",
+      "email": "thiq@example.com",
+      "dob": "2005-09-27",
+      "class": "CNTT2"
+    },
+    {
+      "id": "17",
+      "fullName": "Đinh Văn R",
+      "email": "vanr@example.com",
+      "dob": "2000-01-30",
+      "class": "CNTT1"
+    },
+    {
+      "id": "18",
+      "fullName": "Tạ Thị S",
+      "email": "this@example.com",
+      "dob": "2002-07-12",
+      "class": "CNTT2"
+    },
+    {
+      "id": "19",
+      "fullName": "Cao Văn T",
+      "email": "vant@example.com",
+      "dob": "2004-04-01",
+      "class": "CNTT3"
+    }
+  ]
+}

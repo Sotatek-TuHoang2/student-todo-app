@@ -9,7 +9,7 @@ export const studentService = {
         try {
             const params = searchTerm ? { q: searchTerm } : {};
             const response = await axiosInstance.get<Student[]>
-            (STUDENTS_ENDPOINT, { params });
+                (STUDENTS_ENDPOINT, { params });
             return response.data;
         } catch (error) {
             console.error('Loi lay ds SV', error);
@@ -21,7 +21,7 @@ export const studentService = {
     addStudent: async (studentData: StudentFormData) => {
         try {
             const response = await axiosInstance.post<Student>
-            (STUDENTS_ENDPOINT, studentData);
+                (STUDENTS_ENDPOINT, studentData);
             return response.data;
         } catch (error) {
             console.error('Loi them moi SV', error);
@@ -33,7 +33,7 @@ export const studentService = {
     updateStudent: async (id: string, studentData: StudentFormData) => {
         try {
             const response = await axiosInstance.put<Student>
-            (`${STUDENTS_ENDPOINT}/${id}`, studentData);
+                (`${STUDENTS_ENDPOINT}/${id}`, studentData);
             return response.data;
         } catch (error) {
             console.error('Loi cap nhat SV', error);
@@ -45,11 +45,11 @@ export const studentService = {
     deleteStudent: async (id: string) => {
         try {
             await axiosInstance.delete<void>
-            (`${STUDENTS_ENDPOINT}/${id}`);
+                (`${STUDENTS_ENDPOINT}/${id}`);
         } catch (error) {
             console.error('Loi xoa SV', error);
             throw error;
         }
-    }
+    },
 }
 
