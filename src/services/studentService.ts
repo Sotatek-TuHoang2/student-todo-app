@@ -20,9 +20,23 @@ export const studentService = {
     // Them moi sv
     addStudent: async (studentData: StudentFormData) => {
         try {
-            const response = await axiosInstance.post<Student>
-                (STUDENTS_ENDPOINT, studentData);
-            return response.data;
+            const response = await axiosInstance.get<Student[]>
+                (STUDENTS_ENDPOINT);
+            const students = response.data;
+
+            let maxId = 0;
+            students.forEach(student => {
+                const studentId = parseInt(student.id);
+                if (!isNaN(studentId) && studentId > maxId) {
+                    maxId = studentId;
+                }
+            });
+
+            const newId = (maxId + 1).toString();
+
+            const newStudent = {...studentData, id: newId};
+            const newResponse = await axiosInstance.post<Student>(STUDENTS_ENDPOINT, newStudent)
+            return newResponse.data
         } catch (error) {
             console.error('Loi them moi SV', error);
             throw error;
