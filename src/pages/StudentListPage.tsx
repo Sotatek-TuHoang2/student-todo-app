@@ -5,6 +5,7 @@ import StudentTable from "../components/StudentTable";
 import StudentFormModal from "../components/StudentFormModal";
 import { studentService } from "../services/studentService";
 import type { Student, StudentFormData } from "../types/Student";
+import StudentDetailModal from "../components/StudentDetailModal";
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
@@ -21,6 +22,8 @@ const StudentListPage: React.FC = () => {
     undefined
   );
   const [filterClass, setFilterClass] = useState<string>('');
+  const [selectedStudentForDetail, setSelectedStudentForDetail] = useState<Student | null>(null);
+  const [detailModalVisible, setDetailModalVisible] = useState(false);
 
   const fetchStudents = async (search = "") => {
     try {
@@ -79,6 +82,11 @@ const StudentListPage: React.FC = () => {
     setSelectedStudent(undefined);
     setModalVisible(true);
   };
+
+  const handleDetail = (student: Student) => {
+    setSelectedStudentForDetail(student);
+    setDetailModalVisible(true);
+  }
 
   const handleEdit = (student: Student) => {
     setSelectedStudent(student);
@@ -196,6 +204,7 @@ const StudentListPage: React.FC = () => {
             loading={loading}
             onEdit={handleEdit}
             onDelete={handleDelete}
+            onDetail={handleDetail}
           />
 
           <StudentFormModal
@@ -205,6 +214,12 @@ const StudentListPage: React.FC = () => {
             initialValues={selectedStudent}
             title={modalTitle}
             confirmLoading={confirmLoading}
+          />
+
+          <StudentDetailModal
+            open={detailModalVisible}
+            onClose={() => setDetailModalVisible(false)}
+            student={selectedStudentForDetail}
           />
         </div>
       </Content>

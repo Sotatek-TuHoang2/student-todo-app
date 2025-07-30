@@ -3,12 +3,15 @@ import { Table, Button, Space, Popconfirm, Tooltip } from "antd";
 import { UserOutlined, DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import type { ColumnsType } from "antd/es/table";
 import type { Student } from "../types/Student";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 interface StudentTableProps {
   students: Student[];
   loading: boolean;
   onEdit: (student: Student) => void;
   onDelete: (id: string) => void;
+  onDetail: (student: Student) => void;
 }
 
 const StudentTable: React.FC<StudentTableProps> = ({
@@ -16,6 +19,7 @@ const StudentTable: React.FC<StudentTableProps> = ({
   loading,
   onEdit,
   onDelete,
+  onDetail,
 }) => {
   const columns: ColumnsType<Student> = [
     {
@@ -61,6 +65,15 @@ const StudentTable: React.FC<StudentTableProps> = ({
       key: "action",
       render: (_, record) => (
         <Space>
+          <Tooltip title="Xem chi tiết">
+            <Button
+              type="primary"
+              size="small"
+              icon={<FontAwesomeIcon icon={faEye}/>}
+              onClick={() => onDetail(record)}
+              >
+            </Button>
+          </Tooltip>
           <Tooltip title="Sửa">
             <Button
               type="primary"
