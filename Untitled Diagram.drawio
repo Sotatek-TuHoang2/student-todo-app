@@ -104,7 +104,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VUAB7Ksq0-DQ3PzIiwQ7-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#999999;align=left;spacing=8;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;* = kiêm nhiệm / dual role&lt;br&gt;Gray boxes = junior support roles" vertex="1">
-          <mxGeometry height="70" width="300" x="490" y="881" as="geometry" />
+          <mxGeometry height="61" width="233" x="527" y="849" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
